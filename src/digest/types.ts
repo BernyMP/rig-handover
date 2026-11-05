@@ -14,6 +14,8 @@ export type DigestRow = {
   runs: number;
   /** Lines for this job with status `retry`. */
   retries: number;
+  /** Lines for this job with status `fail`. The page marks any row with one or more. */
+  fails: number;
   /** The `status` of the job's latest line by `at`. */
   lastStatus: RunStatus;
   /** The `error` of the job's latest line by `at`; `null` when that line has none. */
